@@ -2,50 +2,31 @@
 <script type="text/javascript">
 
 
-
-var url = window.location.href;
-
-
-if(url.search( 'es_ES' )!=-1 && url.search( 'customer' )!=-1){
+if(window.location.href.search( 'es_ES' )!=-1 && window.location.href.search( 'customer' )!=-1){
 	$(document).ready(function(){
-		//console.log("function setBOOKING");
-
 		$("#cgu_content > p").html('Texto pop up ES');
 		//$("div.content-form.form > form > p:nth-child(6)").html('Texto bajo boton');
 		//$("div.content.clearfix.body-content > div.content.clearfix.form.p_0 > div.content-form.form > form > p:nth-child(5) > a").text('Condiciones de reserva');
 		//$("div.content.clearfix.body-content > div.content.clearfix.form.p_0 > div.content-form.form > form > div.m_t > fieldset > div > p > label").text(' I wish to receive special offers...');
 		//$("#cgu_content > h1").hide();
-
 	});
- }else if(url.search( 'fr_FR' )!=-1 && url.search( 'customer' )!=-1){
+ }else if(window.location.href.search( 'fr_FR' )!=-1 && window.location.href.search( 'customer' )!=-1){
 	$(document).ready(function(){
-
-
 		$("#cgu_content > p").html('Texto pop up FR');
-
 		//$("div.content-form.form > form > p:nth-child(6)").html('');
 		//$("div.content.clearfix.body-content > div.content.clearfix.form.p_0 > div.content-form.form > form > p:nth-child(5) > a").text('Booking conditions');
 		//$("div.content.clearfix.body-content > div.content.clearfix.form.p_0 > div.content-form.form > form > div.m_t > fieldset > div > p > label").text(' I wish to receive special offers...');
 		//$("#cgu_content > h1").hide();
-
-
 	});
-
 
 }else if(url.search( 'customer' )!=-1){
 	$(document).ready(function(){
-
 		$("#cgu_content > p").html('Texto pop up EN');
 		//$("div.content-form.form > form > p:nth-child(6)").html('Texto bajo boton');
 		//$("div.content.clearfix.body-content > div.content.clearfix.form.p_0 > div.content-form.form > form > p:nth-child(5) > a").text('Booking conditions');
 	        //$("div.content.clearfix.body-content > div.content.clearfix.form.p_0 > div.content-form.form > form > div.m_t > fieldset > div > p > label").text(' I wish to receive special offers...');
 		//$("#cgu_content > h1").hide();
-
-
 	});
-
 }
-
-
 
 </script>
